@@ -63,8 +63,8 @@ export default function About() {
 
             <div className="relative h-[500px] rounded-3xl overflow-hidden shadow-2xl order-first md:order-last">
               <Image
-                src="https://images.unsplash.com/photo-1503676260728-1c00e0947c63?w=1200&q=80"
-                alt="Students studying"
+                src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?w=1200&q=80"
+                alt="Students on campus"
                 fill
                 className="object-cover"
                 unoptimized

@@ -52,7 +52,7 @@ export default function Home() {
                 Since 1895
               </span>
             </div>
-            
+
             {/* Main Headline */}
             <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-white mb-6 leading-[1.1] tracking-tight">
               Education that
@@ -63,7 +63,7 @@ export default function Home() {
 
             {/* Description */}
             <p className="text-xl sm:text-2xl text-white/90 mb-10 leading-relaxed max-w-2xl font-light">
-              A premier liberal arts college preparing students for meaningful careers, 
+              A premier liberal arts college preparing students for meaningful careers,
               lifelong learning, and purposeful leadership.
             </p>
 
@@ -86,14 +86,14 @@ export default function Home() {
                 </svg>
               </Link>
             </div>
+          </div>
 
-            {/* Scroll Indicator */}
-            <div className="mt-16 flex flex-col items-center text-white/60 animate-bounce">
-              <span className="text-sm mb-2">Scroll to explore</span>
-              <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-              </svg>
-            </div>
+          {/* Scroll Indicator - Centered */}
+          <div className="absolute bottom-12 left-1/2 -translate-x-1/2 flex flex-col items-center text-white/60 animate-slow-bounce">
+            <span className="text-sm mb-2">Scroll to explore</span>
+            <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+            </svg>
           </div>
         </div>
       </section>

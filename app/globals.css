@@ -118,6 +118,22 @@ html {
     animation: fadeInUp 0.6s ease-out;
   }
 
+  /* Slow bounce animation */
+  @keyframes slowBounce {
+    0%, 100% {
+      transform: translateY(0);
+      animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+    }
+    50% {
+      transform: translateY(-10px);
+      animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+    }
+  }
+
+  .animate-slow-bounce {
+    animation: slowBounce 2.5s infinite;
+  }
+
   /* Hover effects */
   .hover-lift {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
