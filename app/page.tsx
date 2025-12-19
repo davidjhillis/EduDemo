@@ -25,8 +25,8 @@ export default function Home() {
             muted
             playsInline
             className="w-full h-full object-cover"
-            style={{ 
-              objectPosition: 'center center', 
+            style={{
+              objectPosition: 'center center',
               transform: `scale(${1 + scrollY * 0.0005})`,
               minWidth: '100%',
               minHeight: '100%',
@@ -35,8 +35,7 @@ export default function Home() {
             }}
             preload="auto"
           >
-            <source src="/college_2_students_sitting_in_front_of_ivey_buil_e8c6217f-b4e1-44ad-a9c5-058a88533a5b_1.mp4" type="video/mp4" />
-            <source src="/14931859_3840_2160_32fps.mp4" type="video/mp4" />
+            <source src="https://emau7qcnpt8onc9g.public.blob.vercel-storage.com/8036712-uhd_4096_2160_25fps.mp4" type="video/mp4" />
             <source src="/5530414-uhd_3840_2160_25fps.mp4" type="video/mp4" />
             <source src="/campus-video.mp4" type="video/mp4" />
           </video>
@@ -340,26 +339,47 @@ export default function Home() {
           
           <div className="grid md:grid-cols-3 gap-8 mb-16">
             {[
-              { org: "Carnegie Foundation", title: "Baccalaureate College", year: "2025" },
-              { org: "U.S. News & World Report", title: "Best Liberal Arts Colleges", year: "2024-2025" },
-              { org: "Georgetown University", title: "Top 10% Return on Investment", year: "2025" },
+              {
+                org: "Carnegie Foundation",
+                title: "2025 Carnegie Classification - Opportunity College",
+                description: "By the Carnegie Foundation for the Advancement of Teaching",
+                badge: "/carnegie-badge.svg",
+              },
+              {
+                org: "Research.com",
+                title: "Best Liberal Arts Colleges in America",
+                description: "By Research.com, 2024-2025",
+                badge: "/usnews-badge.svg",
+              },
+              {
+                org: "Georgetown University",
+                title: "Top 5% of Colleges for 10-Year Return on Investment",
+                description: "By Georgetown University's Center on Education and the Workforce, 2025",
+                badge: "/georgetown-badge.svg",
+              },
             ].map((award, idx) => (
-              <div key={idx} className="bg-gradient-to-br from-white to-gray-50 p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 border border-gray-100">
-                <div className="mb-6">
-                  <div className={`bg-gradient-to-br ${
-                    idx % 2 === 0 
-                      ? 'from-primary-50 to-primary-100 border-primary-200' 
-                      : 'from-accent-50 to-accent-100 border-accent-200'
-                  } rounded-xl px-6 py-4 border-2`}>
-                    <div className={`text-xs font-semibold ${
-                      idx % 2 === 0 ? 'text-primary-600' : 'text-accent-600'
-                    } uppercase tracking-wider mb-1`}>{award.org}</div>
-                    <div className="text-sm font-bold text-gray-900">{award.title}</div>
-                    <div className="text-xs text-gray-600 mt-1">{award.year}</div>
-                  </div>
+              <div key={idx} className="group bg-gradient-to-br from-white to-gray-50 p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 border border-gray-100">
+                {/* Badge Image */}
+                <div className="relative w-48 h-48 mx-auto mb-6">
+                  <Image
+                    src={award.badge}
+                    alt={award.org}
+                    fill
+                    className="object-contain drop-shadow-lg group-hover:scale-105 transition-transform duration-500"
+                    unoptimized
+                  />
                 </div>
-                <p className="text-sm text-gray-600 leading-relaxed">
-                  Recognized for excellence in liberal arts education and exceptional student outcomes.
+
+                {/* Award Title */}
+                <h3 className={`text-lg font-bold mb-3 text-center ${
+                  idx % 2 === 0 ? 'text-primary-700' : 'text-accent-700'
+                }`}>
+                  {award.title}
+                </h3>
+
+                {/* Description */}
+                <p className="text-sm text-gray-600 text-center leading-relaxed">
+                  {award.description}
                 </p>
               </div>
             ))}
@@ -406,3 +426,5 @@ export default function Home() {
     </div>
   );
 }
+
+

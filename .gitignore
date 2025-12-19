@@ -35,4 +35,6 @@ yarn-error.log*
 next-env.d.ts
 
 # Note: Large video files may need Git LFS for deployment
-# public/8036712-uhd_4096_2160_25fps.mp4
+public/8036712-uhd_4096_2160_25fps.mp4
+
+

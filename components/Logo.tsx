@@ -52,3 +52,5 @@ export default function Logo({ className = "", isScrolled = false }: LogoProps) 
     </Link>
   );
 }
+
+

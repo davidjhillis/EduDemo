@@ -98,3 +98,5 @@ You can customize colors, content, and styling in the respective component files
 - All content is fictional and for demonstration purposes only
 - The design is inspired by Stanbridge University but is not affiliated with them
 - Northwinds College is a fictional liberal arts college created for demonstration purposes
+
+

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import "./globals.css";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
@@ -15,6 +16,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <Script
+          src="https://embed.showpilot.com/js/app.js?ptkn=Ng=="
+          strategy="beforeInteractive"
+        />
+      </head>
       <body className="antialiased">
         <Navigation />
         <main>{children}</main>
@@ -23,3 +30,5 @@ export default function RootLayout({
     </html>
   );
 }
+
+
