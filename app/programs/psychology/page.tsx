@@ -8,7 +8,7 @@ export default function Psychology() {
       <section className="relative h-[60vh] min-h-[500px] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
           <Image
-            src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=1920&q=80"
+            src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=1920&q=80"
             alt="Psychology"
             fill
             className="object-cover"
@@ -38,7 +38,7 @@ export default function Psychology() {
           <div className="grid md:grid-cols-2 gap-16 items-center mb-16">
             <div className="relative h-[500px] rounded-3xl overflow-hidden shadow-2xl">
               <Image
-                src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=1200&q=80"
+                src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=1200&q=80"
                 alt="Psychology"
                 fill
                 className="object-cover"
@@ -229,7 +229,7 @@ export default function Psychology() {
       <section className="py-32 bg-gradient-to-br from-slate-900 via-primary-900 to-accent-900 text-white relative overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <Image
-            src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=1920&q=80"
+            src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=1920&q=80"
             alt="Psychology"
             fill
             className="object-cover"
