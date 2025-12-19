@@ -34,5 +34,5 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-# large video files (exceed GitHub 100MB limit)
-Public/*.mp4
+# large video file (exceeds GitHub 100MB limit - use Git LFS or external storage)
+Public/8036712-uhd_4096_2160_25fps.mp4
