@@ -94,14 +94,14 @@ export default function Navigation() {
               About Us
             </Link>
             <Link
-              href="/campus-visit"
+              href="/schedule-visit"
               className={`px-4 py-2 text-sm font-medium rounded-lg transition-all ${
-                isScrolled 
-                  ? 'text-gray-900 hover:text-primary-600 hover:bg-gray-50' 
+                isScrolled
+                  ? 'text-gray-900 hover:text-primary-600 hover:bg-gray-50'
                   : 'text-white/90 hover:text-white hover:bg-white/10'
               }`}
             >
-              Visit Campus
+              Schedule Visit
             </Link>
           </div>
 
@@ -209,11 +209,11 @@ export default function Navigation() {
               About Us
             </Link>
             <Link
-              href="/campus-visit"
+              href="/schedule-visit"
               className="block px-4 py-3 text-gray-700 hover:bg-gray-50 rounded-lg font-medium transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
-              Visit Campus
+              Schedule Visit
             </Link>
             <Link
               href="/admissions"

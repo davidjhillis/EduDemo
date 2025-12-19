@@ -115,12 +115,15 @@ export default function CampusVisit() {
                   </li>
                 ))}
               </ul>
-              <button className="group bg-gradient-to-r from-primary-600 to-primary-700 text-white px-8 py-4 rounded-full font-semibold hover:shadow-xl hover:shadow-primary-500/30 transition-all duration-300 inline-flex items-center hover:-translate-y-1">
+              <Link
+                href="/schedule-visit"
+                className="group bg-gradient-to-r from-primary-600 to-primary-700 text-white px-8 py-4 rounded-full font-semibold hover:shadow-xl hover:shadow-primary-500/30 transition-all duration-300 inline-flex items-center hover:-translate-y-1"
+              >
                 Schedule In-Person Tour
                 <svg className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                 </svg>
-              </button>
+              </Link>
             </div>
 
             <div className="bg-white p-10 rounded-2xl shadow-xl border border-gray-100 hover:shadow-2xl transition-all transform hover:-translate-y-2">
@@ -142,12 +145,15 @@ export default function CampusVisit() {
                   </li>
                 ))}
               </ul>
-              <button className="group bg-gradient-to-r from-accent-600 to-accent-700 text-white px-8 py-4 rounded-full font-semibold hover:shadow-xl hover:shadow-accent-500/30 transition-all duration-300 inline-flex items-center hover:-translate-y-1">
+              <Link
+                href="/schedule-visit?tab=virtual"
+                className="group bg-gradient-to-r from-accent-600 to-accent-700 text-white px-8 py-4 rounded-full font-semibold hover:shadow-xl hover:shadow-accent-500/30 transition-all duration-300 inline-flex items-center hover:-translate-y-1"
+              >
                 Take Virtual Tour
                 <svg className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                 </svg>
-              </button>
+              </Link>
             </div>
           </div>
         </div>
@@ -206,12 +212,15 @@ export default function CampusVisit() {
               </div>
             </div>
 
-            <button className="group bg-gradient-to-r from-primary-600 to-primary-700 text-white px-8 py-4 rounded-full font-semibold hover:shadow-xl hover:shadow-primary-500/30 transition-all duration-300 inline-flex items-center hover:-translate-y-1">
+            <Link
+              href="/schedule-visit?tab=info-sessions"
+              className="group bg-gradient-to-r from-primary-600 to-primary-700 text-white px-8 py-4 rounded-full font-semibold hover:shadow-xl hover:shadow-primary-500/30 transition-all duration-300 inline-flex items-center hover:-translate-y-1"
+            >
               Register for Info Session
               <svg className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
               </svg>
-            </button>
+            </Link>
           </div>
         </div>
       </section>
@@ -234,12 +243,15 @@ export default function CampusVisit() {
             Schedule your visit today and take the first step toward your liberal arts education.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="group bg-white text-slate-900 px-10 py-5 rounded-full text-lg font-semibold hover:shadow-2xl hover:shadow-white/20 transition-all duration-300 inline-flex items-center justify-center hover:-translate-y-1">
+            <Link
+              href="/schedule-visit"
+              className="group bg-white text-slate-900 px-10 py-5 rounded-full text-lg font-semibold hover:shadow-2xl hover:shadow-white/20 transition-all duration-300 inline-flex items-center justify-center hover:-translate-y-1"
+            >
               Schedule Campus Tour
               <svg className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
               </svg>
-            </button>
+            </Link>
             <Link
               href="/admissions"
               className="group bg-transparent border-2 border-white/30 text-white px-10 py-5 rounded-full text-lg font-semibold hover:bg-white/10 hover:border-white/50 transition-all duration-300 inline-flex items-center justify-center backdrop-blur-sm hover:-translate-y-1"

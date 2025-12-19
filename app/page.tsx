@@ -415,7 +415,7 @@ export default function Home() {
               </svg>
             </Link>
             <Link
-              href="/campus-visit"
+              href="/schedule-visit"
               className="group bg-transparent border-2 border-white/30 text-white px-10 py-5 rounded-full text-lg font-semibold hover:bg-white/10 hover:border-white/50 transition-all duration-300 inline-flex items-center justify-center backdrop-blur-sm hover:-translate-y-1"
             >
               Schedule a Visit
