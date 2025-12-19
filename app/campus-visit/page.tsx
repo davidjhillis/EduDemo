@@ -8,7 +8,7 @@ export default function CampusVisit() {
       <section className="relative h-[70vh] min-h-[600px] flex items-center justify-center overflow-hidden bg-gradient-to-br from-slate-900 via-primary-900 to-accent-900">
         <div className="absolute inset-0">
           <Image
-            src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=1920&q=80"
+            src="https://images.unsplash.com/photo-1562774053-701939374585?w=1920&q=80"
             alt="College campus"
             fill
             className="object-cover"

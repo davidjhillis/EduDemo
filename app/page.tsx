@@ -35,7 +35,7 @@ export default function Home() {
             }}
             preload="auto"
           >
-            <source src="/8036712-uhd_4096_2160_25fps.mp4" type="video/mp4" />
+            <source src="/college_2_students_sitting_in_front_of_ivey_buil_e8c6217f-b4e1-44ad-a9c5-058a88533a5b_1.mp4" type="video/mp4" />
             <source src="/14931859_3840_2160_32fps.mp4" type="video/mp4" />
             <source src="/5530414-uhd_3840_2160_25fps.mp4" type="video/mp4" />
             <source src="/campus-video.mp4" type="video/mp4" />
