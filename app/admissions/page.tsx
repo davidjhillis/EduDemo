@@ -1,7 +1,59 @@
 import Link from "next/link";
 import Image from "next/image";
+import FAQSection from "@/components/FAQSection";
 
 export default function Admissions() {
+  const admissionsFAQs = [
+    {
+      question: "What is the application deadline for Northwinds College?",
+      answer: "Northwinds College offers three application deadlines: <strong>Early Decision (November 15)</strong> for binding admission, <strong>Early Action (December 1)</strong> for non-binding early notification, and <strong>Regular Decision (February 1)</strong> for standard admission. Applications received after these dates will be considered on a rolling basis if space is available."
+    },
+    {
+      question: "Is Northwinds College test-optional?",
+      answer: "Yes, Northwinds College is test-optional for the 2025-2026 admissions cycle. Students may choose to submit SAT or ACT scores if they feel the scores strengthen their application, but they are not required. Our holistic review process evaluates academic performance, essays, recommendations, and extracurricular involvement regardless of test score submission."
+    },
+    {
+      question: "What GPA do I need to be admitted to Northwinds College?",
+      answer: "There is no minimum GPA requirement at Northwinds College. Our admissions process is holistic, considering the rigor of your coursework, grade trends, extracurricular activities, essays, and recommendations. Most admitted students have a weighted GPA of 3.5 or higher and have challenged themselves with honors or AP courses when available. We understand that academic performance should be evaluated in the context of opportunities available at your high school."
+    },
+    {
+      question: "How much does it cost to attend Northwinds College?",
+      answer: "The total cost of attendance for the 2025-2026 academic year is approximately <strong>$52,000</strong>, which includes tuition ($38,000), room and board ($12,000), and fees ($2,000). However, <strong>85% of our students receive financial aid</strong>, with the average need-based aid package totaling $28,000 per year. Merit scholarships ranging from $5,000 to full tuition are also available based on academic achievement and talent."
+    },
+    {
+      question: "What financial aid options are available?",
+      answer: "Northwinds College offers comprehensive financial aid including: <strong>Need-based grants</strong> (determined by FAFSA and CSS Profile), <strong>merit scholarships</strong> (no separate application required), <strong>federal student loans</strong>, <strong>work-study programs</strong>, and <strong>payment plans</strong>. We are committed to meeting 100% of demonstrated financial need for admitted students. To apply for financial aid, submit the FAFSA and CSS Profile by our priority deadline of February 15."
+    },
+    {
+      question: "Can I apply if I'm an international student?",
+      answer: "Absolutely! Northwinds College welcomes international students from around the world. International applicants should submit the same materials as domestic students, plus: <strong>TOEFL or IELTS scores</strong> (minimum TOEFL iBT 80 or IELTS 6.5), <strong>certified English translations</strong> of all academic documents, <strong>financial certification</strong> demonstrating ability to fund education, and <strong>copy of passport</strong>. International students are eligible for merit scholarships but not federal financial aid. We offer limited institutional aid for international students with demonstrated need."
+    },
+    {
+      question: "What majors and programs does Northwinds College offer?",
+      answer: "Northwinds College offers five majors in liberal arts: <strong>English & Literature</strong>, <strong>History</strong>, <strong>Psychology</strong>, <strong>Chemistry</strong>, and <strong>Fine Arts</strong>. All programs emphasize critical thinking, effective communication, and interdisciplinary learning. Students can also design individualized concentrations combining multiple disciplines. Our 15:1 student-faculty ratio ensures personalized attention and mentorship. Many students pursue double majors or add minors to customize their education."
+    },
+    {
+      question: "Do I need to schedule a campus visit?",
+      answer: "While campus visits are not required for admission, we <strong>highly recommend</strong> visiting Northwinds College to experience our community firsthand. Campus visits include a 90-minute guided tour, meetings with admissions counselors, opportunities to sit in on classes, and chances to meet current students. We offer <strong>weekday tours</strong> (Monday-Friday at 10:00 AM and 2:00 PM), <strong>Saturday tours</strong> (11:00 AM), <strong>virtual tours</strong>, and <strong>special admitted student days</strong>. Schedule your visit at least 2 weeks in advance, especially during peak admissions season (October-March)."
+    },
+    {
+      question: "What are my chances of getting accepted?",
+      answer: "Northwinds College has an acceptance rate of approximately <strong>45%</strong>, admitting students who demonstrate academic excellence, intellectual curiosity, and character. Our holistic admissions process considers: <strong>academic record</strong> (GPA and course rigor), <strong>personal essays</strong> (showcasing your voice and experiences), <strong>recommendations</strong> (from teachers and counselors), <strong>extracurricular involvement</strong> (depth over breadth), and <strong>demonstrated interest</strong> (campus visits, communication with admissions). The best way to strengthen your application is to challenge yourself academically, pursue activities you're passionate about, and craft thoughtful, authentic essays."
+    },
+    {
+      question: "When will I receive an admissions decision?",
+      answer: "Admission decisions are released on the following schedule: <strong>Early Decision applicants</strong> receive decisions by December 15, <strong>Early Action applicants</strong> by January 15, and <strong>Regular Decision applicants</strong> by April 1. All decisions are released electronically through your applicant portal. Accepted students have until <strong>May 1 (National College Decision Day)</strong> to submit their enrollment deposit and confirm attendance."
+    },
+    {
+      question: "Can I transfer to Northwinds College from another college?",
+      answer: "Yes, Northwinds College welcomes transfer students. Transfer applicants should have completed at least one semester (12 credits) at an accredited institution with a minimum GPA of <strong>2.75</strong>. Required materials include: <strong>college transcripts</strong>, <strong>high school transcripts</strong>, <strong>transfer essay</strong> explaining your reasons for transferring, and <strong>one academic recommendation</strong> from a college professor. Transfer credits are evaluated individually; typically, courses with grades of C or higher from accredited institutions may transfer. The transfer application deadline is <strong>March 15</strong> for fall enrollment and <strong>November 1</strong> for spring enrollment."
+    },
+    {
+      question: "What housing options are available for first-year students?",
+      answer: "All first-year students are required to live on campus in our residence halls, fostering community and engagement. First-year housing options include: <strong>traditional double rooms</strong> (most common), <strong>suite-style living</strong> (shared bathroom between two rooms), and <strong>wellness housing</strong> (substance-free floors). All residence halls feature study lounges, laundry facilities, and common areas. Room assignments are made in July based on housing preferences submitted with your enrollment deposit. <strong>Room and board</strong> is approximately $12,000 per year and includes a meal plan with dining hall access."
+    }
+  ];
+
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section - Premium */}
@@ -149,6 +201,13 @@ export default function Admissions() {
           </div>
         </div>
       </section>
+
+      {/* FAQ Section */}
+      <FAQSection
+        title="Admissions Questions Answered"
+        description="Get answers to the most common questions about applying to Northwinds College."
+        faqs={admissionsFAQs}
+      />
 
       {/* CTA */}
       <section className="py-32 bg-gradient-to-br from-slate-900 via-primary-900 to-accent-900 text-white relative overflow-hidden">
