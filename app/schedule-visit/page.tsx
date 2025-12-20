@@ -2,6 +2,7 @@
 
 import { useState, useEffect, Suspense } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { useSearchParams } from "next/navigation";
 import BookingForm from "@/components/BookingForm";
 
@@ -447,6 +448,17 @@ export default function ScheduleVisit() {
     <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
       {/* Hero Header */}
       <section className="relative h-[60vh] min-h-[500px] flex items-center justify-center overflow-hidden bg-gradient-to-br from-slate-900 via-primary-900 to-accent-900">
+        <div className="absolute inset-0">
+          <Image
+            src="https://images.unsplash.com/photo-1562774053-701939374585?w=1920&q=80"
+            alt="College campus"
+            fill
+            className="object-cover"
+            unoptimized
+            priority
+          />
+          <div className="absolute inset-0 bg-gradient-to-br from-slate-900/70 via-primary-900/60 to-accent-900/65"></div>
+        </div>
         <div className="relative z-10 max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 xl:px-16 w-full">
           <div className="max-w-3xl">
             <span className="text-sm font-semibold tracking-wider uppercase text-white/90 px-4 py-2 bg-white/10 backdrop-blur-md rounded-full border border-white/20 inline-block mb-6">
