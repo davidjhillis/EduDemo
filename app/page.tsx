@@ -35,7 +35,7 @@ export default function Home() {
             }}
             preload="auto"
           >
-            <source src="https://emau7qcnpt8onc9g.public.blob.vercel-storage.com/8036712-uhd_4096_2160_25fps.mp4" type="video/mp4" />
+            <source src="/6549288-uhd_3840_2160_25fps.mp4" type="video/mp4" />
             <source src="/5530414-uhd_3840_2160_25fps.mp4" type="video/mp4" />
             <source src="/campus-video.mp4" type="video/mp4" />
           </video>
@@ -177,7 +177,7 @@ export default function Home() {
                   playsInline
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                 >
-                  <source src="/5536728-uhd_3840_2160_25fps.mp4" type="video/mp4" />
+                  <source src="/college_2_students_sitting_in_front_of_ivey_buil_e8c6217f-b4e1-44ad-a9c5-058a88533a5b_1.mp4" type="video/mp4" />
                 </video>
                   <div className="absolute inset-0 bg-gradient-to-t from-accent-900/90 via-accent-900/50 to-transparent"></div>
                 <div className="absolute bottom-6 left-6 right-6">
@@ -203,7 +203,7 @@ export default function Home() {
                   playsInline
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                 >
-                  <source src="/6549288-uhd_3840_2160_25fps.mp4" type="video/mp4" />
+                  <source src="/14931859_3840_2160_32fps.mp4" type="video/mp4" />
                 </video>
                   <div className="absolute inset-0 bg-gradient-to-t from-primary-800/90 via-accent-800/50 to-transparent"></div>
                 <div className="absolute bottom-6 left-6 right-6">
