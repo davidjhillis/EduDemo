@@ -54,7 +54,7 @@ export default function Home() {
             </div>
 
             {/* Main Headline */}
-            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-white mb-6 leading-[1.1] tracking-tight">
+            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold font-serif text-white mb-6 leading-[1.1] tracking-tight">
               Education that
               <span className="block mt-2 bg-gradient-to-r from-primary-300 via-accent-300 to-primary-200 bg-clip-text text-transparent">
                 transforms lives
@@ -88,8 +88,8 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Scroll Indicator - Centered */}
-          <div className="absolute bottom-12 left-1/2 -translate-x-1/2 flex flex-col items-center text-white/60 animate-slow-bounce">
+          {/* Scroll Indicator - Over video, below CTAs, above stats */}
+          <div className="absolute -bottom-16 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center text-gray-400 animate-slow-bounce">
             <span className="text-sm mb-2">Scroll to explore</span>
             <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
@@ -129,7 +129,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
           <div className="text-center mb-20">
             <span className="text-sm font-semibold text-primary-600 uppercase tracking-wider mb-4 block">Why Choose Us</span>
-            <h2 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight">
+            <h2 className="text-5xl md:text-6xl font-bold font-serif text-gray-900 mb-6 leading-tight">
               Every student matters.
               <br />
               <span className="text-gray-600">Every story counts.</span>
@@ -156,7 +156,7 @@ export default function Home() {
                   <div className="absolute inset-0 bg-gradient-to-t from-primary-900/90 via-primary-900/50 to-transparent"></div>
                 <div className="absolute bottom-6 left-6 right-6">
                   <div className="text-5xl font-bold text-white mb-2">95%</div>
-                  <h3 className="text-2xl font-bold text-white">Graduate Success</h3>
+                  <h3 className="text-2xl font-bold font-serif text-white">Graduate Success</h3>
                 </div>
               </div>
               <div className="p-8">
@@ -182,7 +182,7 @@ export default function Home() {
                   <div className="absolute inset-0 bg-gradient-to-t from-accent-900/90 via-accent-900/50 to-transparent"></div>
                 <div className="absolute bottom-6 left-6 right-6">
                   <div className="text-5xl font-bold text-white mb-2">15:1</div>
-                  <h3 className="text-2xl font-bold text-white">Small Classes</h3>
+                  <h3 className="text-2xl font-bold font-serif text-white">Small Classes</h3>
                 </div>
               </div>
               <div className="p-8">
@@ -208,7 +208,7 @@ export default function Home() {
                   <div className="absolute inset-0 bg-gradient-to-t from-primary-800/90 via-accent-800/50 to-transparent"></div>
                 <div className="absolute bottom-6 left-6 right-6">
                   <div className="text-5xl font-bold text-white mb-2">100%</div>
-                  <h3 className="text-2xl font-bold text-white">Career Support</h3>
+                  <h3 className="text-2xl font-bold font-serif text-white">Career Support</h3>
                 </div>
               </div>
               <div className="p-8">
@@ -227,7 +227,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
           <div className="text-center mb-20">
             <span className="text-sm font-semibold text-primary-600 uppercase tracking-wider mb-4 block">Academic Excellence</span>
-            <h2 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
+            <h2 className="text-5xl md:text-6xl font-bold font-serif text-gray-900 mb-6">
               Explore Our Programs
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
@@ -266,7 +266,7 @@ export default function Home() {
                   } transition-all duration-500`}></div>
                 </div>
                 <div className="absolute inset-0 flex flex-col justify-end p-6">
-                  <h3 className="text-2xl font-bold text-white mb-2 group-hover:translate-x-2 transition-transform duration-300">
+                  <h3 className="text-2xl font-bold font-serif text-white mb-2 group-hover:translate-x-2 transition-transform duration-300">
                     {program.name}
                   </h3>
                   <div className="flex items-center text-white/90 group-hover:translate-x-2 transition-transform duration-300">
@@ -309,9 +309,9 @@ export default function Home() {
             </div>
             <div>
               <span className="text-sm font-semibold text-blue-600 uppercase tracking-wider mb-4 block">Student Story</span>
-              <blockquote className="text-4xl md:text-5xl font-light text-gray-900 mb-8 leading-tight italic">
-                &quot;Northwinds College provided me with a solid foundation in critical thinking and 
-                communication. The small class sizes and dedicated faculty helped me discover my passion 
+              <blockquote className="text-4xl md:text-5xl font-light font-serif text-gray-900 mb-8 leading-tight italic">
+                &quot;Northwinds College provided me with a solid foundation in critical thinking and
+                communication. The small class sizes and dedicated faculty helped me discover my passion
                 for literature.&quot;
               </blockquote>
               <div className="border-t-2 border-primary-200 pt-6">
@@ -328,7 +328,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
           <div className="text-center mb-20">
             <span className="text-sm font-semibold text-primary-600 uppercase tracking-wider mb-4 block">Recognition</span>
-            <h2 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
+            <h2 className="text-5xl md:text-6xl font-bold font-serif text-gray-900 mb-6">
               Awards & Recognition
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
@@ -371,7 +371,7 @@ export default function Home() {
                 </div>
 
                 {/* Award Title */}
-                <h3 className={`text-lg font-bold mb-3 text-center ${
+                <h3 className={`text-lg font-bold font-serif mb-3 text-center ${
                   idx % 2 === 0 ? 'text-primary-700' : 'text-accent-700'
                 }`}>
                   {award.title}
@@ -400,7 +400,7 @@ export default function Home() {
         </div>
         <div className="absolute inset-0 bg-gradient-to-br from-slate-900/95 via-primary-900/95 to-accent-900/95"></div>
         <div className="max-w-4xl mx-auto px-6 sm:px-8 lg:px-12 text-center relative z-10">
-          <h2 className="text-5xl md:text-6xl font-bold mb-6">Ready to begin your journey?</h2>
+          <h2 className="text-5xl md:text-6xl font-bold font-serif mb-6">Ready to begin your journey?</h2>
           <p className="text-xl md:text-2xl text-white/90 mb-12 max-w-2xl mx-auto">
             Join a community of thinkers, leaders, and changemakers. Your future starts here.
           </p>

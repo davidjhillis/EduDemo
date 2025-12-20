@@ -74,7 +74,7 @@ export default function Admissions() {
             <span className="text-sm font-semibold tracking-wider uppercase text-white/90 px-4 py-2 bg-white/10 backdrop-blur-md rounded-full border border-white/20 inline-block mb-6">
               Admissions
             </span>
-            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-white mb-6 leading-[1.1] tracking-tight" id="admissions-hero-title" data-content-well="admissions-overview" style={{ fontFamily: 'Georgia, serif' }}>
+            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold font-serif text-white mb-6 leading-[1.1] tracking-tight" id="admissions-hero-title" data-content-well="admissions-overview">
               Begin Your Journey
             </h1>
             <p className="text-xl sm:text-2xl text-white/90 leading-relaxed max-w-2xl font-light">
@@ -89,7 +89,7 @@ export default function Admissions() {
         <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
           <div className="text-center mb-20">
             <span className="text-sm font-semibold text-primary-600 uppercase tracking-wider mb-4 block">Application</span>
-            <h2 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6" style={{ fontFamily: 'Georgia, serif' }}>
+            <h2 className="text-5xl md:text-6xl font-bold font-serif text-gray-900 mb-6">
               How to Apply
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
@@ -121,13 +121,13 @@ export default function Admissions() {
         <div className="max-w-4xl mx-auto px-6 sm:px-8 lg:px-12">
           <div className="text-center mb-16">
             <span className="text-sm font-semibold text-primary-600 uppercase tracking-wider mb-4 block">Requirements</span>
-            <h2 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6" style={{ fontFamily: 'Georgia, serif' }}>
+            <h2 className="text-5xl md:text-6xl font-bold font-serif text-gray-900 mb-6">
               Admission Requirements
             </h2>
           </div>
           
           <div className="bg-white p-10 rounded-2xl shadow-xl border border-gray-100 mb-8">
-            <h3 className="text-2xl font-bold mb-6 text-gray-900" style={{ fontFamily: 'Georgia, serif' }}>General Requirements</h3>
+            <h3 className="text-2xl font-bold font-serif mb-6 text-gray-900">General Requirements</h3>
             <ul className="space-y-4 text-gray-700">
               {[
                 "High school diploma or equivalent",
@@ -146,7 +146,7 @@ export default function Admissions() {
           </div>
 
           <div className="bg-white p-10 rounded-2xl shadow-xl border border-gray-100">
-            <h3 className="text-2xl font-bold mb-6 text-gray-900" style={{ fontFamily: 'Georgia, serif' }}>What We Look For</h3>
+            <h3 className="text-2xl font-bold font-serif mb-6 text-gray-900">What We Look For</h3>
             <div className="space-y-6">
               {[
                 { title: "Academic Excellence", description: "Strong performance in a rigorous high school curriculum, including honors and AP courses when available." },
@@ -168,7 +168,7 @@ export default function Admissions() {
         <div className="max-w-4xl mx-auto px-6 sm:px-8 lg:px-12">
           <div className="text-center mb-16">
             <span className="text-sm font-semibold text-primary-600 uppercase tracking-wider mb-4 block">Financial Support</span>
-            <h2 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6" style={{ fontFamily: 'Georgia, serif' }}>
+            <h2 className="text-5xl md:text-6xl font-bold font-serif text-gray-900 mb-6">
               Financial Aid & Scholarships
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
@@ -178,7 +178,7 @@ export default function Admissions() {
           
           <div className="grid md:grid-cols-2 gap-8">
             <div className="bg-gradient-to-br from-primary-50 to-primary-100/50 p-10 rounded-2xl shadow-lg border border-primary-200 hover:shadow-xl transition-all transform hover:-translate-y-1">
-              <h3 className="text-2xl font-bold mb-4 text-gray-900" style={{ fontFamily: 'Georgia, serif' }}>Need-Based Aid</h3>
+              <h3 className="text-2xl font-bold font-serif mb-4 text-gray-900">Need-Based Aid</h3>
               <p className="text-gray-700 mb-6 leading-relaxed text-lg">
                 We are committed to making a Northwinds education accessible. Over 85% of our students 
                 receive some form of financial assistance through grants, loans, and work-study programs.
@@ -189,7 +189,7 @@ export default function Admissions() {
             </div>
 
             <div className="bg-gradient-to-br from-accent-50 to-accent-100/50 p-10 rounded-2xl shadow-lg border border-accent-200 hover:shadow-xl transition-all transform hover:-translate-y-1">
-              <h3 className="text-2xl font-bold mb-4 text-gray-900" style={{ fontFamily: 'Georgia, serif' }}>Merit Scholarships</h3>
+              <h3 className="text-2xl font-bold font-serif mb-4 text-gray-900">Merit Scholarships</h3>
               <p className="text-gray-700 mb-6 leading-relaxed text-lg">
                 Academic excellence scholarships, leadership awards, and talent-based scholarships are 
                 available. Awards range from $5,000 to full tuition.
@@ -222,7 +222,7 @@ export default function Admissions() {
         </div>
         <div className="absolute inset-0 bg-gradient-to-br from-slate-900/95 via-primary-900/95 to-accent-900/95"></div>
         <div className="max-w-4xl mx-auto px-6 sm:px-8 lg:px-12 text-center relative z-10">
-          <h2 className="text-5xl md:text-6xl font-bold mb-6" style={{ fontFamily: 'Georgia, serif' }}>Ready to Apply?</h2>
+          <h2 className="text-5xl md:text-6xl font-bold font-serif mb-6">Ready to Apply?</h2>
           <p className="text-xl md:text-2xl mb-12 text-white/90 max-w-2xl mx-auto">
             Schedule a meeting with our admissions team to learn more about Northwinds College.
           </p>

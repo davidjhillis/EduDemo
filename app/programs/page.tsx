@@ -60,7 +60,7 @@ export default function Programs() {
             <span className="text-sm font-semibold tracking-wider uppercase text-white/90 px-4 py-2 bg-white/10 backdrop-blur-md rounded-full border border-white/20 inline-block mb-6">
               Academic Programs
             </span>
-            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-white mb-6 leading-[1.1] tracking-tight" id="programs-hero-title" data-content-well="programs-overview" style={{ fontFamily: 'Georgia, serif' }}>
+            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold font-serif text-white mb-6 leading-[1.1] tracking-tight" id="programs-hero-title" data-content-well="programs-overview">
               Academic Programs
             </h1>
             <p className="text-xl sm:text-2xl text-white/90 leading-relaxed max-w-2xl font-light">
@@ -76,7 +76,7 @@ export default function Programs() {
         <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
           <div className="text-center mb-20">
             <span className="text-sm font-semibold text-primary-600 uppercase tracking-wider mb-4 block">Our Programs</span>
-            <h2 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6" style={{ fontFamily: 'Georgia, serif' }}>
+            <h2 className="text-5xl md:text-6xl font-bold font-serif text-gray-900 mb-6">
               Our Programs
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
@@ -109,7 +109,7 @@ export default function Programs() {
                   } transition-all duration-500`}></div>
                 </div>
                 <div className="absolute inset-0 flex flex-col justify-end p-8">
-                  <h3 className="text-2xl font-bold text-white mb-3 group-hover:translate-x-2 transition-transform duration-300" style={{ fontFamily: 'Georgia, serif' }}>
+                  <h3 className="text-2xl font-bold font-serif text-white mb-3 group-hover:translate-x-2 transition-transform duration-300">
                     {program.name}
                   </h3>
                   <p className="text-white/90 mb-4 group-hover:translate-x-2 transition-transform duration-300">
@@ -134,7 +134,7 @@ export default function Programs() {
           <div className="grid md:grid-cols-2 gap-16 items-center">
             <div>
               <span className="text-sm font-semibold text-primary-600 uppercase tracking-wider mb-4 block">Liberal Arts</span>
-              <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6" style={{ fontFamily: 'Georgia, serif' }}>Why a Liberal Arts Education?</h2>
+              <h2 className="text-4xl md:text-5xl font-bold font-serif text-gray-900 mb-6">Why a Liberal Arts Education?</h2>
               <p className="text-lg text-gray-700 mb-6 leading-relaxed">
                 A liberal arts education at Northwinds College prepares you for success in any field. 
                 Our interdisciplinary approach develops critical thinking, effective communication, 
@@ -185,7 +185,7 @@ export default function Programs() {
         </div>
         <div className="absolute inset-0 bg-gradient-to-br from-slate-900/95 via-primary-900/95 to-accent-900/95"></div>
         <div className="max-w-4xl mx-auto px-6 sm:px-8 lg:px-12 text-center relative z-10">
-          <h2 className="text-5xl md:text-6xl font-bold mb-6" style={{ fontFamily: 'Georgia, serif' }}>Ready to Explore?</h2>
+          <h2 className="text-5xl md:text-6xl font-bold font-serif mb-6">Ready to Explore?</h2>
           <p className="text-xl md:text-2xl mb-12 text-white/90 max-w-2xl mx-auto">
             Learn more about our programs and find the right fit for your academic and career goals.
           </p>

@@ -24,6 +24,12 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* Ensure Georgia loads immediately on headings to prevent FOUT */
+h1, h2, h3, h4, h5, h6,
+.font-serif {
+  font-family: Georgia, serif !important;
+}
+
 /* Smooth scrolling */
 html {
   scroll-behavior: smooth;

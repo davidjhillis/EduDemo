@@ -22,7 +22,7 @@ export default function CampusVisit() {
             <span className="text-sm font-semibold tracking-wider uppercase text-white/90 px-4 py-2 bg-white/10 backdrop-blur-md rounded-full border border-white/20 inline-block mb-6">
               Visit Us
             </span>
-            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-white mb-6 leading-[1.1] tracking-tight" id="campus-visit-hero-title" data-content-well="campus-visit-overview" style={{ fontFamily: 'Georgia, serif' }}>
+            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold font-serif text-white mb-6 leading-[1.1] tracking-tight" id="campus-visit-hero-title" data-content-well="campus-visit-overview">
               Visit Northwinds College
             </h1>
             <p className="text-xl sm:text-2xl text-white/90 leading-relaxed max-w-2xl font-light">
@@ -47,7 +47,7 @@ export default function CampusVisit() {
             </div>
             <div>
               <span className="text-sm font-semibold text-primary-600 uppercase tracking-wider mb-4 block">Campus</span>
-              <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gray-900" style={{ fontFamily: 'Georgia, serif' }}>Our Beautiful Campus</h2>
+              <h2 className="text-4xl md:text-5xl font-bold font-serif mb-6 text-gray-900">Our Beautiful Campus</h2>
               <p className="text-lg text-gray-700 mb-6 leading-relaxed">
                 Nestled on 200 acres of rolling hills, Northwinds College offers a picturesque setting 
                 for your college experience. Our historic buildings blend seamlessly with modern facilities, 
@@ -61,7 +61,7 @@ export default function CampusVisit() {
           </div>
 
           <div className="mt-20 bg-gradient-to-br from-primary-50 to-accent-50/50 p-10 rounded-2xl shadow-lg border border-primary-100">
-            <h3 className="text-2xl font-bold mb-8 text-gray-900" style={{ fontFamily: 'Georgia, serif' }}>Campus Highlights</h3>
+            <h3 className="text-2xl font-bold font-serif mb-8 text-gray-900">Campus Highlights</h3>
             <div className="grid md:grid-cols-2 gap-6">
               {[
                 "200-acre campus with historic and modern buildings",
@@ -86,7 +86,7 @@ export default function CampusVisit() {
         <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
           <div className="text-center mb-20">
             <span className="text-sm font-semibold text-primary-600 uppercase tracking-wider mb-4 block">Ways to Visit</span>
-            <h2 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6" style={{ fontFamily: 'Georgia, serif' }}>
+            <h2 className="text-5xl md:text-6xl font-bold font-serif text-gray-900 mb-6">
               Ways to Visit
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
@@ -96,7 +96,7 @@ export default function CampusVisit() {
           
           <div className="grid md:grid-cols-2 gap-8">
             <div className="bg-white p-10 rounded-2xl shadow-xl border border-gray-100 hover:shadow-2xl transition-all transform hover:-translate-y-2">
-              <h3 className="text-2xl font-bold mb-4 text-gray-900" style={{ fontFamily: 'Georgia, serif' }}>In-Person Campus Tour</h3>
+              <h3 className="text-2xl font-bold font-serif mb-4 text-gray-900">In-Person Campus Tour</h3>
               <p className="text-gray-700 mb-6 leading-relaxed text-lg">
                 Schedule a guided tour of our campus facilities. Tours are available Monday through Friday 
                 and include visits to academic buildings, residence halls, dining facilities, and student 
@@ -127,7 +127,7 @@ export default function CampusVisit() {
             </div>
 
             <div className="bg-white p-10 rounded-2xl shadow-xl border border-gray-100 hover:shadow-2xl transition-all transform hover:-translate-y-2">
-              <h3 className="text-2xl font-bold mb-4 text-gray-900" style={{ fontFamily: 'Georgia, serif' }}>Virtual Tour</h3>
+              <h3 className="text-2xl font-bold font-serif mb-4 text-gray-900">Virtual Tour</h3>
               <p className="text-gray-700 mb-6 leading-relaxed text-lg">
                 Can&apos;t make it to campus? Take a virtual tour from the comfort of your home. 
                 Our virtual tours include 360° views, video walkthroughs, and interactive experiences.
@@ -164,7 +164,7 @@ export default function CampusVisit() {
         <div className="max-w-4xl mx-auto px-6 sm:px-8 lg:px-12">
           <div className="text-center mb-16">
             <span className="text-sm font-semibold text-primary-600 uppercase tracking-wider mb-4 block">Information Sessions</span>
-            <h2 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6" style={{ fontFamily: 'Georgia, serif' }}>
+            <h2 className="text-5xl md:text-6xl font-bold font-serif text-gray-900 mb-6">
               Information Sessions
             </h2>
           </div>
@@ -238,7 +238,7 @@ export default function CampusVisit() {
         </div>
         <div className="absolute inset-0 bg-gradient-to-br from-slate-900/95 via-primary-900/95 to-accent-900/95"></div>
         <div className="max-w-4xl mx-auto px-6 sm:px-8 lg:px-12 text-center relative z-10">
-          <h2 className="text-5xl md:text-6xl font-bold mb-6" style={{ fontFamily: 'Georgia, serif' }}>Ready to See Northwinds College?</h2>
+          <h2 className="text-5xl md:text-6xl font-bold font-serif mb-6">Ready to See Northwinds College?</h2>
           <p className="text-xl md:text-2xl mb-12 text-white/90 max-w-2xl mx-auto">
             Schedule your visit today and take the first step toward your liberal arts education.
           </p>

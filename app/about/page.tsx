@@ -22,7 +22,7 @@ export default function About() {
             <span className="text-sm font-semibold tracking-wider uppercase text-white/90 px-4 py-2 bg-white/10 backdrop-blur-md rounded-full border border-white/20 inline-block mb-6">
               About Us
             </span>
-            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-white mb-6 leading-[1.1] tracking-tight" id="about-hero-title" data-content-well="about-overview" style={{ fontFamily: 'Georgia, serif' }}>
+            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold font-serif text-white mb-6 leading-[1.1] tracking-tight" id="about-hero-title" data-content-well="about-overview">
               About Northwinds College
             </h1>
             <p className="text-xl sm:text-2xl text-white/90 leading-relaxed max-w-2xl font-light">
@@ -47,7 +47,7 @@ export default function About() {
             </div>
             <div>
               <span className="text-sm font-semibold text-primary-600 uppercase tracking-wider mb-4 block">Our Mission</span>
-              <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gray-900" style={{ fontFamily: 'Georgia, serif' }}>Our Mission</h2>
+              <h2 className="text-4xl md:text-5xl font-bold font-serif mb-6 text-gray-900">Our Mission</h2>
               <p className="text-lg text-gray-700 mb-6 leading-relaxed">
                 Northwinds College is dedicated to providing a transformative liberal arts education 
                 that fosters critical thinking, creativity, and ethical leadership. We prepare students 
@@ -72,7 +72,7 @@ export default function About() {
             </div>
             <div>
               <span className="text-sm font-semibold text-primary-600 uppercase tracking-wider mb-4 block">Our Vision</span>
-              <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gray-900" style={{ fontFamily: 'Georgia, serif' }}>Our Vision</h2>
+              <h2 className="text-4xl md:text-5xl font-bold font-serif mb-6 text-gray-900">Our Vision</h2>
               <p className="text-lg text-gray-700 mb-6 leading-relaxed">
                 To be recognized as a premier liberal arts college that produces graduates who are 
                 thoughtful, engaged citizens and leaders in their chosen fields. We envision a future 
@@ -93,7 +93,7 @@ export default function About() {
         <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
           <div className="text-center mb-20">
             <span className="text-sm font-semibold text-primary-600 uppercase tracking-wider mb-4 block">Our Values</span>
-            <h2 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6" style={{ fontFamily: 'Georgia, serif' }}>
+            <h2 className="text-5xl md:text-6xl font-bold font-serif text-gray-900 mb-6">
               Our Core Values
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
@@ -111,7 +111,7 @@ export default function About() {
               { title: "Civic Engagement", description: "We prepare students to be active, engaged citizens who contribute positively to their communities and address global challenges." },
             ].map((value, idx) => (
               <div key={idx} className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
-                <h3 className="text-2xl font-bold mb-4 text-primary-900" style={{ fontFamily: 'Georgia, serif' }}>{value.title}</h3>
+                <h3 className="text-2xl font-bold font-serif mb-4 text-primary-900">{value.title}</h3>
                 <p className="text-gray-700 leading-relaxed">{value.description}</p>
               </div>
             ))}
@@ -124,7 +124,7 @@ export default function About() {
         <div className="max-w-4xl mx-auto px-6 sm:px-8 lg:px-12">
           <div className="text-center mb-16">
             <span className="text-sm font-semibold text-primary-600 uppercase tracking-wider mb-4 block">Our Story</span>
-            <h2 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6" style={{ fontFamily: 'Georgia, serif' }}>
+            <h2 className="text-5xl md:text-6xl font-bold font-serif text-gray-900 mb-6">
               Our History
             </h2>
           </div>
@@ -154,7 +154,7 @@ export default function About() {
         <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
           <div className="text-center mb-20">
             <span className="text-sm font-semibold text-primary-600 uppercase tracking-wider mb-4 block">Recognition</span>
-            <h2 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6" style={{ fontFamily: 'Georgia, serif' }}>
+            <h2 className="text-5xl md:text-6xl font-bold font-serif text-gray-900 mb-6">
               Accreditations & Recognition
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
@@ -164,7 +164,7 @@ export default function About() {
           
           <div className="grid md:grid-cols-2 gap-8">
             <div className="bg-white p-10 rounded-2xl shadow-xl border border-gray-100 hover:shadow-2xl transition-all transform hover:-translate-y-1">
-              <h3 className="text-2xl font-bold mb-4 text-gray-900" style={{ fontFamily: 'Georgia, serif' }}>Regional Accreditation</h3>
+              <h3 className="text-2xl font-bold font-serif mb-4 text-gray-900">Regional Accreditation</h3>
               <p className="text-gray-700 mb-4 leading-relaxed text-lg">
                 Northwinds College is accredited by the Higher Learning Commission (HLC), ensuring that 
                 our programs meet rigorous standards for quality education and student outcomes.
@@ -176,7 +176,7 @@ export default function About() {
             </div>
 
             <div className="bg-white p-10 rounded-2xl shadow-xl border border-gray-100 hover:shadow-2xl transition-all transform hover:-translate-y-1">
-              <h3 className="text-2xl font-bold mb-4 text-gray-900" style={{ fontFamily: 'Georgia, serif' }}>Program Accreditations</h3>
+              <h3 className="text-2xl font-bold font-serif mb-4 text-gray-900">Program Accreditations</h3>
               <ul className="space-y-3 text-gray-700">
                 <li className="flex items-start">
                   <span className="text-primary-600 mr-3 font-bold">•</span>
@@ -213,7 +213,7 @@ export default function About() {
         </div>
         <div className="absolute inset-0 bg-gradient-to-br from-slate-900/95 via-primary-900/95 to-accent-900/95"></div>
         <div className="max-w-4xl mx-auto px-6 sm:px-8 lg:px-12 text-center relative z-10">
-          <h2 className="text-5xl md:text-6xl font-bold mb-6" style={{ fontFamily: 'Georgia, serif' }}>Join Our Community</h2>
+          <h2 className="text-5xl md:text-6xl font-bold font-serif mb-6">Join Our Community</h2>
           <p className="text-xl md:text-2xl mb-12 text-white/90 max-w-2xl mx-auto">
             Discover how Northwinds College can help you achieve your academic and career goals.
           </p>

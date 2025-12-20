@@ -30,21 +30,7 @@ function ScheduleVisitContent() {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
-      {/* Hero Header */}
-      <section className="bg-gradient-to-br from-slate-900 via-primary-900 to-accent-900 text-white py-20">
-        <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
-          <div className="max-w-3xl">
-            <h1 className="text-5xl md:text-6xl font-bold mb-4" style={{ fontFamily: 'Georgia, serif' }}>
-              Schedule Your Visit
-            </h1>
-            <p className="text-xl text-white/90 leading-relaxed">
-              Experience Northwinds College firsthand. Choose from our variety of visit options to find what works best for you.
-            </p>
-          </div>
-        </div>
-      </section>
-
+    <>
       {/* Tabs Navigation */}
       <section className="bg-white border-b border-gray-200 sticky top-0 z-40 shadow-sm">
         <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
@@ -75,7 +61,7 @@ function ScheduleVisitContent() {
           {/* Campus Visit Tab */}
           {activeTab === "campus-visit" && (
             <div className="max-w-5xl">
-              <h2 className="text-4xl font-bold mb-6 text-gray-900" style={{ fontFamily: 'Georgia, serif' }}>
+              <h2 className="text-4xl font-bold font-serif mb-6 text-gray-900">
                 Campus Tours
               </h2>
               <p className="text-lg text-gray-700 mb-8 leading-relaxed">
@@ -87,7 +73,7 @@ function ScheduleVisitContent() {
                 <>
                   <div className="grid md:grid-cols-2 gap-8 mb-12">
                     <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow">
-                      <h3 className="text-2xl font-bold mb-4 text-primary-900">Weekday Tours</h3>
+                      <h3 className="text-2xl font-bold font-serif mb-4 text-primary-900">Weekday Tours</h3>
                       <p className="text-gray-700 mb-4">Monday - Friday, 10:00 AM & 2:00 PM</p>
                       <ul className="space-y-2 text-gray-600 mb-6">
                         <li className="flex items-start">
@@ -116,7 +102,7 @@ function ScheduleVisitContent() {
                     </div>
 
                     <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow">
-                      <h3 className="text-2xl font-bold mb-4 text-accent-900">Saturday Tours</h3>
+                      <h3 className="text-2xl font-bold font-serif mb-4 text-accent-900">Saturday Tours</h3>
                       <p className="text-gray-700 mb-4">Saturdays, 11:00 AM</p>
                       <ul className="space-y-2 text-gray-600 mb-6">
                         <li className="flex items-start">
@@ -155,7 +141,7 @@ function ScheduleVisitContent() {
               ) : (
                 <div>
                   <div className="flex items-center justify-between mb-6">
-                    <h3 className="text-2xl font-bold text-gray-900">
+                    <h3 className="text-2xl font-bold font-serif text-gray-900">
                       {selectedTourType === "weekday" ? "Schedule Weekday Tour" : "Schedule Saturday Tour"}
                     </h3>
                     <button
@@ -177,7 +163,7 @@ function ScheduleVisitContent() {
           {/* Events Tab */}
           {activeTab === "events" && (
             <div className="max-w-4xl">
-              <h2 className="text-4xl font-bold mb-6 text-gray-900" style={{ fontFamily: 'Georgia, serif' }}>
+              <h2 className="text-4xl font-bold font-serif mb-6 text-gray-900">
                 Prospective Student Events
               </h2>
               <p className="text-lg text-gray-700 mb-8 leading-relaxed">
@@ -207,7 +193,7 @@ function ScheduleVisitContent() {
                 ].map((event, idx) => (
                   <div key={idx} className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow">
                     <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
-                      <h3 className="text-2xl font-bold text-gray-900">{event.title}</h3>
+                      <h3 className="text-2xl font-bold font-serif text-gray-900">{event.title}</h3>
                       <span className="text-primary-600 font-semibold">{event.date}</span>
                     </div>
                     <p className="text-gray-600 mb-4">{event.time}</p>
@@ -224,7 +210,7 @@ function ScheduleVisitContent() {
           {/* Info Sessions Tab */}
           {activeTab === "info-sessions" && (
             <div className="max-w-5xl">
-              <h2 className="text-4xl font-bold mb-6 text-gray-900" style={{ fontFamily: 'Georgia, serif' }}>
+              <h2 className="text-4xl font-bold font-serif mb-6 text-gray-900">
                 Information Sessions
               </h2>
               <p className="text-lg text-gray-700 mb-8 leading-relaxed">
@@ -233,7 +219,7 @@ function ScheduleVisitContent() {
 
               {!showInfoSessionForm ? (
                 <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 mb-8">
-                  <h3 className="text-2xl font-bold mb-6 text-gray-900">Monthly Information Sessions</h3>
+                  <h3 className="text-2xl font-bold font-serif mb-6 text-gray-900">Monthly Information Sessions</h3>
                   <div className="grid md:grid-cols-2 gap-8 mb-8">
                     <div>
                       <h4 className="font-bold text-lg mb-4 text-gray-900">Upcoming Sessions</h4>
@@ -281,7 +267,7 @@ function ScheduleVisitContent() {
               ) : (
                 <div>
                   <div className="flex items-center justify-between mb-6">
-                    <h3 className="text-2xl font-bold text-gray-900">Register for Information Session</h3>
+                    <h3 className="text-2xl font-bold font-serif text-gray-900">Register for Information Session</h3>
                     <button
                       onClick={() => setShowInfoSessionForm(false)}
                       className="text-primary-600 hover:text-primary-700 font-semibold flex items-center"
@@ -301,7 +287,7 @@ function ScheduleVisitContent() {
           {/* Virtual Tab */}
           {activeTab === "virtual" && (
             <div className="max-w-5xl">
-              <h2 className="text-4xl font-bold mb-6 text-gray-900" style={{ fontFamily: 'Georgia, serif' }}>
+              <h2 className="text-4xl font-bold font-serif mb-6 text-gray-900">
                 Virtual Programs
               </h2>
               <p className="text-lg text-gray-700 mb-8 leading-relaxed">
@@ -316,7 +302,7 @@ function ScheduleVisitContent() {
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
                       </svg>
                     </div>
-                    <h3 className="text-2xl font-bold mb-4 text-gray-900">Self-Guided Virtual Tour</h3>
+                    <h3 className="text-2xl font-bold font-serif mb-4 text-gray-900">Self-Guided Virtual Tour</h3>
                     <p className="text-gray-700 mb-6">
                       Explore campus at your own pace with our interactive 360° virtual tour. Available 24/7 with no registration required.
                     </p>
@@ -331,7 +317,7 @@ function ScheduleVisitContent() {
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z" />
                       </svg>
                     </div>
-                    <h3 className="text-2xl font-bold mb-4 text-gray-900">Live Virtual Chat</h3>
+                    <h3 className="text-2xl font-bold font-serif mb-4 text-gray-900">Live Virtual Chat</h3>
                     <p className="text-gray-700 mb-6">
                       Connect one-on-one with an admissions counselor via Zoom. Discuss programs, ask questions, and get personalized guidance.
                     </p>
@@ -346,7 +332,7 @@ function ScheduleVisitContent() {
               ) : (
                 <div>
                   <div className="flex items-center justify-between mb-6">
-                    <h3 className="text-2xl font-bold text-gray-900">Schedule Virtual Meeting</h3>
+                    <h3 className="text-2xl font-bold font-serif text-gray-900">Schedule Virtual Meeting</h3>
                     <button
                       onClick={() => setShowVirtualForm(false)}
                       className="text-primary-600 hover:text-primary-700 font-semibold flex items-center"
@@ -366,7 +352,7 @@ function ScheduleVisitContent() {
           {/* Group Visit Tab */}
           {activeTab === "group-visit" && (
             <div className="max-w-4xl">
-              <h2 className="text-4xl font-bold mb-6 text-gray-900" style={{ fontFamily: 'Georgia, serif' }}>
+              <h2 className="text-4xl font-bold font-serif mb-6 text-gray-900">
                 Group Visits
               </h2>
               <p className="text-lg text-gray-700 mb-8 leading-relaxed">
@@ -374,7 +360,7 @@ function ScheduleVisitContent() {
               </p>
 
               <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 mb-8">
-                <h3 className="text-2xl font-bold mb-6 text-gray-900">Group Visit Options</h3>
+                <h3 className="text-2xl font-bold font-serif mb-6 text-gray-900">Group Visit Options</h3>
                 <div className="space-y-6">
                   <div>
                     <h4 className="font-bold text-lg text-primary-900 mb-2">High School Groups</h4>
@@ -452,21 +438,40 @@ function ScheduleVisitContent() {
           </Link>
         </div>
       </section>
-    </div>
+    </>
   );
 }
 
 export default function ScheduleVisit() {
   return (
-    <Suspense fallback={
-      <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white flex items-center justify-center">
-        <div className="text-center">
-          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary-600 mx-auto mb-4"></div>
-          <p className="text-gray-600">Loading...</p>
+    <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
+      {/* Hero Header */}
+      <section className="relative h-[60vh] min-h-[500px] flex items-center justify-center overflow-hidden bg-gradient-to-br from-slate-900 via-primary-900 to-accent-900">
+        <div className="relative z-10 max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 xl:px-16 w-full">
+          <div className="max-w-3xl">
+            <span className="text-sm font-semibold tracking-wider uppercase text-white/90 px-4 py-2 bg-white/10 backdrop-blur-md rounded-full border border-white/20 inline-block mb-6">
+              Visit Campus
+            </span>
+            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold font-serif text-white mb-6 leading-[1.1] tracking-tight">
+              Schedule Your Visit
+            </h1>
+            <p className="text-xl sm:text-2xl text-white/90 leading-relaxed max-w-2xl font-light">
+              Experience Northwinds College firsthand. Choose from our variety of visit options to find what works best for you.
+            </p>
+          </div>
         </div>
-      </div>
-    }>
-      <ScheduleVisitContent />
-    </Suspense>
+      </section>
+
+      <Suspense fallback={
+        <div className="flex items-center justify-center py-20">
+          <div className="text-center">
+            <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary-600 mx-auto mb-4"></div>
+            <p className="text-gray-600">Loading...</p>
+          </div>
+        </div>
+      }>
+        <ScheduleVisitContent />
+      </Suspense>
+    </div>
   );
 }

@@ -15,14 +15,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <head>
         <Script
           src="https://embed.showpilot.com/js/app.js?ptkn=Ng=="
           strategy="beforeInteractive"
         />
       </head>
-      <body className="antialiased">
+      <body className="antialiased" suppressHydrationWarning>
         <Navigation />
         <main>{children}</main>
         <Footer />

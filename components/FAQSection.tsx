@@ -36,7 +36,7 @@ export default function FAQSection({ title = "Frequently Asked Questions", descr
       <section className="py-32 bg-gray-50" id="faq">
         <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
           <div className="text-center mb-20">
-            <h2 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6" style={{ fontFamily: 'Georgia, serif' }}>
+            <h2 className="text-5xl md:text-6xl font-bold font-serif text-gray-900 mb-6">
               {title}
             </h2>
             {description && (
